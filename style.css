@@ -8,13 +8,109 @@ body {
 }
 
 a{
-    transition: color .2s linear;
+    transition: color .2s linear, border .2s linear;
     text-decoration: none;
-    border-bottom: 1px dotted ;
+    border-bottom: 1px dotted;
+    color: #49bf9d;
+}
+
+p{
+    margin: 0 0 2em;
+}
+
+img{
+    max-width:  100%;
+}
+
+a:hover{
+    border-bottom: transparent;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: normal;
+    color: #787878;
+    font-weight: normal;
+    margin: 0 0 1em; /*1 em é sempre relativo ao tamnho da fonte*/
+    margin: 1em o;
 }
 
 h1 {
-    font-weight: normal;
+    font-size: 36px;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+h3 {
+    font-size: 26px;
+}
+
+h4 {
+    font-size: 22px;
+}
+
+h5 {
+    font-size: 18px;
+}
+
+h6 {
+    font-size: 12px;
+}
+
+sub, sup{
+    font-size: 12px;
+}
+
+blockquote{
+    border-left: 5px solid #efefef;
+    margin: 2em 0;
+    padding: .5em 0 .5em 1.5em;
+}
+
+code {
+    background: #f7f7f7;
+    border-radius: .35em;
+    border: 2px solid #efefef;
+    font-size: .9em;
+    padding: 0.25em 0,65em;
+    font-family: 'Courier New', Courier, monospace;
+    color: #929292
+}
+
+pre code{
+    display: block;
+}
+
+ul, ol{
+    margin: 0;
+    padding: 0;
+    list-style-position: inside;
+}
+
+.ul-alternate{
+    list-style-type: none;
+    padding-left: 0;
+
+}
+
+.ul-alternate li {
+    border-bottom: 2px solid #c7c7c7;
+}
+
+.ul-alternate li:last-child {
+    border: 0;
+}
+
+.ul-icons{
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.ul-icons li{
+    display: inline-block;
+    font-size: 1.5em;
+    color: #49bf9d;
 }
 
 .main-header {
@@ -44,7 +140,7 @@ h1 {
 }
 
 .main-header-link {
-    color: inherit;
+    color: inherit; /*cor erdada*/
 }
 
 .main-header-link:hover {
@@ -56,4 +152,193 @@ h1 {
     margin-left: 35%;
     padding: 124px 54px 72px;
     box-sizing: border-box;
+}
+
+.row{
+    overflow: auto;
+}
+
+input, label, textarea, select{
+    display: inline-block;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+select{
+    color:rgba(136, 136, 136, 0.856)
+}
+
+input, textarea, select{
+    background: rgba(204, 204, 204, 0.253);
+    padding: 10px;
+    border-radius: 5px;
+    border: 3px solid transparent;
+    margin-bottom: 15px;
+}
+
+input:focus, textarea:focus{
+    border: 3px solid #49bf9d;
+    outline: none; /*usado para tirar o azul que é padrao do browser*/
+}
+
+input[type="radio"], input[type="checkbox"]{
+    width: auto;
+}
+
+textarea{
+    height: 10em;
+}
+
+.gallery-img img{
+    width: 100%;
+}
+
+.thumb
+
+.col-1234 {
+    display: flex;
+    flex-direction: row;
+}
+
+.col-123, .col-456, .col-789 {
+    flex: 3;
+    width: 33%;
+}
+
+.col-456 {
+    margin: 0 15px;
+}
+
+.border-img {
+    border-radius: 10px;
+}
+
+.col123{
+    display: flex;
+    flex-direction: row;
+}
+
+.col-2{
+    width: 48%;
+    float: left;
+    display: inline;
+}
+
+.col-2:first-child{
+    margin-right: 2%;
+}
+
+.col-2:last-child{
+    margin-left: 2%;
+}
+
+.col2-3{
+    width: 90%;
+    float: left;
+    flex: 2;
+}
+
+.col1-3{
+    width: 50%;
+    float: left;
+    flex: 1;
+    margin-right: 10%;
+}
+
+.button-default {
+    background-color: #49bf9d;
+    border: 2px solid #49bf9d;
+    color: white;
+    padding: .75em 1.5em;
+    border-radius: 5px;
+    font-size: .8em;
+    display: inline-block;
+    width: auto;
+}
+
+.button-default-stroke{
+    background-color: white;
+    color:inherit;
+    border: 2px solid #aca9a9;
+}
+
+.button-default-small{
+    font-size: .6em;
+}
+
+.button-default-big {
+    font-size: 1em;
+}
+
+.button-default-full{
+    display: block;
+    text-align: center;
+    margin-bottom: 5px;
+    
+}
+
+.table {
+    width: 100%;
+    margin: 0 0 0 0;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+.table td{
+    padding: 0.75em;
+}
+
+.table th{
+    background: #ccc;
+    padding: 0.75em;
+}
+
+.table tbody tr:first-child td{
+    border-bottom: 1px solid #ccc;
+}
+
+.table tbody tr:first-child td {
+    border-top: 2px solid #ccc;
+}
+
+.table tbody tr:first-child td {
+    border-bottom: 2px solid #ccc;
+}
+
+.table tbody tr:nth-child(odd) td{
+    background: #ddd;
+} /*odd pega só as filhas impares e even que pegam filhas pares*/
+
+.table-alternate tbody td, .table-alternate tbody tr:first-child td, .table-alternate tbody tr:last-child td{
+    border: 2px solid #ccc;
+}
+
+.table-alternate tbody td{
+    border: 1px solid #ddd;
+}
+
+.imagem-link{
+    border: 0;
+}
+
+.recent-works-card img{
+    border-radius: 10px;
+    overflow: hidden; /*usado para esconder / n foi utilizado porém adc mesmo assim caso necessite em outro browser*/ 
+}
+
+.main-header-link img{
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.img-left{
+    float: left;
+    border-radius: 10px;
+    margin-right: 25px;
+}
+
+.img-right{
+    float: right;
+    border-radius: 10px;
+    margin-left: 9px;
 }
