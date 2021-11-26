@@ -16,6 +16,7 @@ a{
 
 p{
     margin: 0 0 2em;
+    color: rgba(124, 123, 123, 0.671);
 }
 
 img{
@@ -254,12 +255,25 @@ textarea{
     font-size: .8em;
     display: inline-block;
     width: auto;
+    transition: all .5s;
+    cursor: pointer;
+}
+
+.button-default:hover{
+    background-color: #5ddeb9;
+    border:2px solid transparent;
 }
 
 .button-default-stroke{
     background-color: white;
     color:inherit;
     border: 2px solid #aca9a9;
+}
+
+.button-default-stroke:hover{
+    color: #49bf9d;
+    border-color: #49bf9d;
+    background-color: white;
 }
 
 .button-default-small{
@@ -341,4 +355,13 @@ textarea{
     float: right;
     border-radius: 10px;
     margin-left: 9px;
+}
+
+.main-footer{
+    position: fixed;
+    bottom: 0;
+    width: 35%;
+    left: 0;
+    padding: 0 54px 72px 0;
+    box-sizing: border-box;
 }
