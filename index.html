@@ -22,12 +22,14 @@
                 <strong>
                     Lorem Ipsum
                 </strong> <br> 
-                s simply dummy text of the printing and typesetting industry. <br> 
+                s simply dummy text of the printing and typesetting industry. 
+            </h1>
+            <p class="main-header-tittle">
                 retirado de 
                 <a href="https://html5up.net/" class="main-header-link"> 
                     html5up.net 
                 </a>
-            </h1>
+            </p>
         </header>
         <main class="main-content">
             <section class="main-content-section">
@@ -127,6 +129,10 @@
                 <p>
                     The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested.
                 </p>
+                <hr>
+                <h5> 
+                    Form
+                </h5>
                 <form action="#" method="POST">
                     <div class="col123">
                         <div class="row">
@@ -176,7 +182,8 @@
                             </address>
                         </div>
                     </div>
-                <br>
+                    <br>
+                </form>
                 <hr>
             </section>
             <section class="main-content-section">
@@ -236,17 +243,19 @@
             <section class="main-content-section">
                 <h3>
                     Blockquote
-                </h3> <!--Blockquote é usado para citações de outros autores, citações maiores, e a tag q é usada para citações menores-->
+                </h3> <!--Blockquote é usado para citações de outros autores, citações maiores, e a tag p é usada para citações maiores/ usei o p porém tirei a formatacao do mesmo-->
                 <blockquote cite="https://www.lipsum.com/">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet suscipit voluptatem nisi perspiciatis, quam quisquam minus tempore eaque dolor, quis nam excepturi? Optio culpa eos consequatur dolorum repudiandae velit magnam.
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet suscipit voluptatem nisi perspiciatis, quam quisquam minus tempore eaque dolor, quis nam excepturi? Optio culpa eos consequatur dolorum repudiandae velit magnam.
+                    </p>
                 </blockquote>
             </section>
+            <hr>
             <section class="main-content-section">
                 <h3>
                     Preformatted
                 </h3>
-                <pre>
-                    <code>
+                <pre><code>
                         &lt;script&gt;
                             alert('hi');
                         &lt;script&gt;
@@ -309,6 +318,9 @@
                         </h5>
                         <ul class="ul-icons">
                             <li>
+                                <span class="hidden">
+                                    Twitter
+                                </span>
                                 <i class="fab fa-twitter">
                                 </i>
                             </li>
@@ -652,12 +664,19 @@
             <footer class="main-footer">
                 <ul class="ul-icons">
                     <li>
+                        <span class="hidden">
+                            Twitter
+                        </span>
                         <a href="#" class="icon-link">
                             <i class="fab fa-twitter">
                             </i>
                         </a>
                     </li>
+                    <!--span adc para ter mais acessibilidade no site, textos removidos no css-->
                     <li>
+                        <span class="hidden">
+                            Fabebook
+                        </span>
                         <a href="#" class="icon-link">
                             <i class="fab fa-facebook-square">
                             </i>
@@ -666,8 +685,9 @@
                 </ul>
                 <ul class="copyright">
                     <li>
-                        Untitled
+                        Untitled 
                     </li>
+                    |
                     <li>
                         Design: 
                         <a href="http://html5up.net">
