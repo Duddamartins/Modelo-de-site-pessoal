@@ -23,11 +23,6 @@ img{
     max-width:  100%;
 }
 
-a:hover{
-    border-bottom: transparent;
-    color: #49bf9d;
-}
-
 h1, h2, h3, h4, h5, h6 {
     font-weight: normal;
     color: #787878;
@@ -267,6 +262,7 @@ textarea{
 .button-default:hover{
     background-color: #5ddeb9;
     border:2px solid transparent;
+    color: white;
 }
 
 .button-default-stroke{
