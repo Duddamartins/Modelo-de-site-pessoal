@@ -122,7 +122,7 @@ ul, ol{
     width: 35%;
     padding: 124px 54px 72px;
     box-sizing: border-box;
-    background-image: url(../overlay.png), url(../bg.jpg);
+    background-image: url(overlay.png), url(bg.jpg);
     background-position: left top;
     background-size: auto, cover;
     text-align: right;
